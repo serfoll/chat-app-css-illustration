@@ -1,0 +1,52 @@
+.phone
+  .phone__wrapper
+    .chat__app__header
+      figure.chat__app__header__media
+        img.chat__app__header__media__image(
+          src='../shared/images/avatar.jpg',
+          alt='Samuel Green profile picture'
+        )
+      .chat__app__header__info
+        h3.chat__app_header__info__name Samuel Green
+        p.chat__app__header__info__status Available to Walk
+
+    .chat__app__body
+      .chat__app__body__content
+        .content__chat__wrapper
+          p.chat__bublle.content__client__chat__bubble That sounds great. I’d be happy with that.
+          p.chat__bubble.content__client__bubble Could you send over some pictures of your dog, please?
+
+        .content__user__media__wrapper
+          figure.content__user__media
+            img.content__user__media__image(
+              src='../shared/images/dog-image-1.jpg',
+              alt='small dog big tree'
+            )
+          figure.content__user__media
+            img.content__user__media__image(
+              src='../shared/images/dog-image-2.jpg',
+              alt='happy dog'
+            )
+          figure.content__user__media
+            img.content__user__media__image(
+              src='../shared/images/dog-image-3.jpg',
+              alt='small dog big tree'
+            )
+
+        .content__chat__wrapper 
+          p.chat__bubble.content__user__bubble Here are a few pictures. She’s a happy girl!
+          p.chat__bubble.content__user__bubble Can you make it?
+
+        .content__chat__wrapper
+          p.chat__bublle.content__client__chat__bubble She looks so happy! The time we discussed works. How long shall I take her out for?
+
+          p.chat__bubble__pricing
+            span.pricing__offer 30 minute walk
+            span.pricing__price $29
+          p.chat__bubble__pricing
+            span.pricing__offer 1 hour walk
+            span.pricing__price $49
+
+      .chat__app__footer
+        input(type='text', placeholder='Type a message..')
+        button(type='submit') >

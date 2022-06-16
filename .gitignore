@@ -9,13 +9,13 @@ node_modules
 dist
 design
 .parcel-cache
+chat-app-css-illustration-master
 
 #IGNORE FILES
 .env
 *.sketch
 *.fig
 *.xd
-package-lock.json
 
 README-template.md
 style-guide.md

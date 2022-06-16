@@ -1,9 +1,9 @@
 {
-  "name": "react-boiler-plate",
+  "name": "chat-app-css-illustration",
   "version": "1.0.0",
-  "description": "React parcel boilerplate",
+  "description": "Chat App CSS Ilustration challenge by FrontendMentor",
   "scripts": {
-    "start": "parcel src/index.html --port 3005 --open",
+    "start": "parcel src/views/index.pug --port 3005 --open",
     "deploy:src": "parcel build src/index.html"
   },
   "repository": {
@@ -15,26 +15,26 @@
   "license": "ISC",
   "homepage": "https://github.com/serfoll/react-parcel-boilerplate",
   "browserslist": "> 0.25%, not dead",
-  "dependencies": {
-    "@types/react": "^18.0.9",
-    "date-fns": "^2.28.0",
-    "normalize.css": "^8.0.1",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-icons": "^4.4.0",
-    "react-router-dom": "^6.3.0",
-    "styled-components": "^5.3.5"
-  },
   "devDependencies": {
+    "@parcel/transformer-pug": "^2.6.0",
+    "@parcel/transformer-sass": "^2.6.0",
+    "@prettier/plugin-pug": "^2.1.0",
     "@swc/helpers": "^0.3.17",
     "eslint": "^8.16.0",
+    "eslint-config": "^0.1.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.30.0",
-    "eslint-plugin-react-hooks": "^4.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "include-media": "^1.4.10",
     "parcel": "^2.6.0",
-    "postcss-nested": "^5.0.6",
+    "parcel-resolver-project-root": "^2.1.1",
+    "postcss": "^8.4.14",
+    "postcss-loader": "^7.0.0",
     "prettier": "^2.6.2",
-    "process": "^0.11.10"
+    "sharp": "^0.29.3"
+  },
+  "dependencies": {
+    "pug": "^3.0.2"
   }
 }
