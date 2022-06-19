@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [github](https://github.com/serfoll/chat-app-css-illustration)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Live Site URL: [Netlify](https://thriving-banoffee-b12f12.netlify.app/)
 
 ## My process
 
