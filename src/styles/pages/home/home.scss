@@ -55,9 +55,10 @@
 
     @include media('>phone') {
       border-radius: 50rem 50rem 0 0;
-      right: -8rem;
-      width: 50rem;
       bottom: 0;
+      height: 80rem;
+      right: -18rem;
+      width: 50rem;
     }
 
     @include media('>=1800px') {
