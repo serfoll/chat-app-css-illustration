@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Chat App CSS Ilustration challenge by FrontendMentor",
   "scripts": {
-    "start": "parcel src/views/index.pug --port 3005 --open",
-    "deploy:src": "parcel build src/index.html"
+    "deploy:src": "parcel build src/index.pug src/styles/index.scss",
+    "start": "parcel src/index.pug src/styles/index.scss --port 3005 --open"
   },
   "repository": {
     "type": "git",
@@ -16,10 +16,12 @@
   "homepage": "https://github.com/serfoll/react-parcel-boilerplate",
   "browserslist": "> 0.25%, not dead",
   "devDependencies": {
+    "@parcel/optimizer-cssnano": "^2.6.1",
     "@parcel/transformer-pug": "^2.6.0",
     "@parcel/transformer-sass": "^2.6.0",
     "@prettier/plugin-pug": "^2.1.0",
     "@swc/helpers": "^0.3.17",
+    "concurrently": "^7.2.2",
     "eslint": "^8.16.0",
     "eslint-config": "^0.1.0",
     "eslint-config-prettier": "^8.5.0",
@@ -29,8 +31,6 @@
     "include-media": "^1.4.10",
     "parcel": "^2.6.0",
     "parcel-resolver-project-root": "^2.1.1",
-    "postcss": "^8.4.14",
-    "postcss-loader": "^7.0.0",
     "prettier": "^2.6.2",
     "sharp": "^0.29.3"
   },

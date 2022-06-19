@@ -7,13 +7,14 @@
 html {
   font-size: calc(750px / 750 * 10);
   line-height: 1;
-
   @include media('>phone', '>=desktop') {
     font-size: calc(1440px / 1440 * 10);
   }
 }
 
 body {
+  background-color: $color-Light-Grayish-Violet;
+  color: $color-Dark-Grayish-Violet;
   font-family: $font-rubik;
   font-size: 1.6rem;
   font-weight: 400;

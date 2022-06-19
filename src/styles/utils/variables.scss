@@ -1,17 +1,20 @@
 $color-black: hsl(0, 0%, 0%);
-$color-Dark-Grayish: hsl(270, 7%, 64%);
-$color-Desaturated-Dark: hsl(271, 15%, 43%);
+$color-Dark-Grayish-Violet: hsl(270, 7%, 64%);
+$color-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+$color-Desaturated-Dark-Violet: hsl(271, 15%, 43%);
 $color-Grayish-Blue: hsl(206, 6%, 79%);
 $color-Light-Grayish-Violet: hsl(270, 20%, 96%);
 $color-Moderate-Violet: hsl(276, 55%, 52%);
 $color-Pale-Violet: hsl(276, 100%, 81%);
-$color-Very-Dark: hsl(271, 36%, 24%);
 $color-Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
 $color-Very-Light-Magenta: hsl(289, 100%, 72%);
 $color-white: hsl(0, 0%, 100%);
 
 $gradient-Light: hsl(293, 100%, 63%);
-$gradient-Light: hsl(264, 100%, 61%);
+$gradient-Dark: hsl(264, 100%, 61%);
+
+$gradient-after-light: #c140ff;
+$gradient-after-dark: #953bff;
 
 $font-rubik: 'Rubik', sans-serif;
 

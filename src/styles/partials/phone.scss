@@ -1,0 +1,264 @@
+.phone__wrapper {
+  position: relative;
+
+  @include media('>phone', '>=desktop') {
+    margin-left: 36.2rem;
+    margin-top: 8.5rem;
+  }
+
+  &::after {
+    background-color: $color-white;
+    border-radius: 0 0 1.5rem 1.5rem;
+    content: '';
+    height: 2.5rem;
+    left: 50%;
+    position: absolute;
+    top: 6.8rem;
+    transform: translateX(-50%);
+    width: 13rem;
+  }
+}
+
+.phone {
+  box-shadow: 1.5rem 1.5rem 3.5rem 0
+    rgba($color-Very-Dark-Desaturated-Violet, 0.1);
+  background-color: $color-Light-Grayish-Violet;
+  border: 1rem solid $color-white;
+  border-radius: 3rem;
+  height: 50.6rem;
+  left: 50%;
+  margin-bottom: 13rem;
+  overflow: hidden;
+  position: relative;
+  top: 6.4rem;
+  transform: translateX(-50%);
+  width: 24.8rem;
+  overflow: hidden;
+}
+
+.chat__app__header {
+  background: linear-gradient(
+    to right,
+    $gradient-Dark 0%,
+    $gradient-Light 100%
+  );
+  border-radius: 0.5rem;
+  box-shadow: 0 0 3.5rem 0 rgba($color-Very-Dark-Desaturated-Violet, 0.25);
+  color: $color-white;
+  display: flex;
+  height: 6.6rem;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding-top: 2rem;
+  position: relative;
+
+  &::after {
+    color: rgba($color-white, 0.7);
+    content: '\2807';
+    display: block;
+    font-size: 1.2rem;
+    margin-left: auto;
+    margin-right: 1rem;
+  }
+
+  &::before {
+    content: '\276C';
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 1.5rem;
+  }
+}
+
+.chat__app__header__media {
+  border: 0.2rem solid $color-white;
+  border-radius: 50%;
+  height: 2.5rem;
+  justify-self: flex-start;
+  margin-left: -0.3rem;
+  overflow: hidden;
+  position: relative;
+  width: 2.5rem;
+}
+
+.chat__app__header__media__image {
+  @extend %cover;
+
+  object-fit: cover;
+}
+
+.chat__app__header__info {
+  padding-bottom: 0.5rem;
+}
+
+.chat__app_header__info__name {
+  font-size: 1.1rem;
+  padding-top: 0.4rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  margin-left: -0.2rem;
+}
+
+.chat__app__header__info__status {
+  color: $color-Pale-Violet;
+  font-size: 0.8rem;
+  margin-left: -0.2rem;
+}
+
+.chat__app__body__content {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.content__chat__wrapper {
+  &:first-of-type {
+    align-self: flex-start;
+  }
+
+  &:nth-child(even) {
+    margin-top: 1rem;
+    align-self: flex-end;
+  }
+}
+
+.chat__bubble {
+  border-radius: 1rem 1rem 1rem 0.5rem;
+  font-size: 0.8rem;
+  line-height: 1.25;
+  width: 13rem;
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem 0.8rem 1rem;
+  position: relative;
+
+  &.content__client__bubble {
+    background-color: rgba($color-Pale-Violet, 0.2);
+    color: $color-Moderate-Violet;
+    margin-left: 0.65rem;
+
+    &:nth-child(1) {
+      margin-top: 1.2rem;
+    }
+
+    &:nth-child(2) {
+      padding-right: 0;
+    }
+
+    &.__last {
+      width: 13.3rem;
+      margin-top: 1.8rem;
+      margin-bottom: 0.9rem;
+    }
+  }
+
+  &.content__user__bubble {
+    background-color: $color-white;
+    border-radius: 1rem 1rem 0.5rem 1rem;
+    color: $color-Dark-Desaturated-Violet;
+    padding-right: 0.52rem;
+    padding-left: 1.2rem;
+    left: 0.65rem;
+    &:nth-child(3) {
+      float: right;
+      margin-right: 1.65rem;
+      width: 8rem;
+      line-height: 1;
+      padding: 0.6rem 0.2rem 0.6rem 1rem;
+    }
+  }
+}
+
+.content__user__media__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.5rem 0;
+  margin-bottom: 0;
+}
+
+.content__user__media__image {
+  border-radius: 1rem;
+  height: 4rem;
+  margin-right: 0.8rem;
+  width: 4rem;
+}
+
+.chat__bubble__pricing {
+  margin: 0.8rem;
+  color: rgba($color-white, 0.7);
+  font-size: 0.8rem;
+}
+
+.pricing__offer {
+  display: block;
+  padding: 1.15rem;
+  padding-bottom: 1.2rem;
+  background: linear-gradient(to left, $gradient-Dark 0%, $gradient-Light 100%);
+  border-radius: 1rem 1rem 1rem 0.5rem;
+  padding-left: 2.8rem;
+  position: relative;
+  width: 16rem;
+
+  &::before {
+    background-color: transparent;
+    border: 0.1rem solid $color-Very-Light-Magenta;
+    border-radius: 50%;
+    content: '';
+    display: inline-block;
+    height: 1.2rem;
+    left: 0.8rem;
+    position: absolute;
+    top: 0.8rem;
+    width: 1.2rem;
+  }
+}
+.pricing__price {
+  color: $color-white;
+  float: right;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 0.8;
+  margin-right: 0.4rem;
+}
+
+.chat__app__footer {
+  border-radius: 10rem;
+  background-color: $color-white;
+  margin: 0.7rem auto 0;
+  padding: 0.4rem;
+  padding-bottom: 0;
+  width: 94%;
+}
+
+.chat__app__form__wrapper {
+  position: relative;
+}
+
+.form__message__box {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  padding: 1rem 0.8rem;
+  margin-left: 1rem;
+  &::placeholder,
+  &::-webkit-input-placeholder {
+    color: $color-Grayish-Blue;
+  }
+}
+
+.form__send__button {
+  background-color: $color-Very-Dark-Desaturated-Violet;
+  border-radius: 50%;
+  cursor: default;
+  height: 2.5rem;
+  position: absolute;
+  right: 0rem;
+  top: 0.2rem;
+  width: 2.5rem;
+
+  &::after {
+    content: '\276F';
+    display: block;
+    color: $color-white;
+  }
+}

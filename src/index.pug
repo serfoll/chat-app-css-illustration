@@ -1,0 +1,24 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+
+    base(href='/')
+
+    title= 'Chat App CSS Illustration'
+
+    meta(name='description', content='Chap App Css Illustration')
+
+    link(rel='stylesheet', href='styles/index.scss')
+
+    link(rel='shortcut icon', href='favicon-32x32.png', type='image/x-icon')
+  body
+    #content.content(role='main')
+      .content__wrapper
+        include views/partials/phone
+
+        .description__wrapper
+          h1.description__title Simple booking
+          p.description__text Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.
